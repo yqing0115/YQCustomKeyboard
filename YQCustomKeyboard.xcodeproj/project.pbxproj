@@ -13,6 +13,7 @@
 		4D345A41211AD1AA00E0B5F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D345A40211AD1AA00E0B5F7 /* Assets.xcassets */; };
 		4D345A44211AD1AA00E0B5F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D345A42211AD1AA00E0B5F7 /* LaunchScreen.storyboard */; };
 		4D345A47211AD1AA00E0B5F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D345A46211AD1AA00E0B5F7 /* main.m */; };
+		4D345A50211AD38600E0B5F7 /* YQCustomKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D345A4F211AD38600E0B5F7 /* YQCustomKeyboardView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		4D345A43211AD1AA00E0B5F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D345A45211AD1AA00E0B5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D345A46211AD1AA00E0B5F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D345A4E211AD38600E0B5F7 /* YQCustomKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQCustomKeyboardView.h; sourceTree = "<group>"; };
+		4D345A4F211AD38600E0B5F7 /* YQCustomKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQCustomKeyboardView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		4D345A36211AD1A800E0B5F7 /* YQCustomKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				4D345A4D211AD33100E0B5F7 /* YQCustomKeyboard */,
 				4D345A37211AD1A800E0B5F7 /* AppDelegate.h */,
 				4D345A38211AD1A800E0B5F7 /* AppDelegate.m */,
 				4D345A3A211AD1A800E0B5F7 /* ViewController.h */,
@@ -67,6 +71,15 @@
 				4D345A42211AD1AA00E0B5F7 /* LaunchScreen.storyboard */,
 				4D345A45211AD1AA00E0B5F7 /* Info.plist */,
 				4D345A46211AD1AA00E0B5F7 /* main.m */,
+			);
+			path = YQCustomKeyboard;
+			sourceTree = "<group>";
+		};
+		4D345A4D211AD33100E0B5F7 /* YQCustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4D345A4E211AD38600E0B5F7 /* YQCustomKeyboardView.h */,
+				4D345A4F211AD38600E0B5F7 /* YQCustomKeyboardView.m */,
 			);
 			path = YQCustomKeyboard;
 			sourceTree = "<group>";
@@ -143,6 +156,7 @@
 			files = (
 				4D345A3C211AD1A800E0B5F7 /* ViewController.m in Sources */,
 				4D345A47211AD1AA00E0B5F7 /* main.m in Sources */,
+				4D345A50211AD38600E0B5F7 /* YQCustomKeyboardView.m in Sources */,
 				4D345A39211AD1A800E0B5F7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
