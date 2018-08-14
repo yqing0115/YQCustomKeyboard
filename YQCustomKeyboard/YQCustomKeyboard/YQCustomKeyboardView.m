@@ -8,7 +8,7 @@
 
 #import "YQCustomKeyboardView.h"
 
-#define kCustomKeyboardHeight 176
+#define kCustomKeyboardHeight ([UIScreen mainScreen].bounds.size.width>375?200:176)
 
 
 @interface YQCustomKeyboardView ()
@@ -71,8 +71,8 @@
                 CGFloat leftEdgeInsets = 12;
                 CGFloat spacing = 5;
                 CGFloat btnWidth = (containerView.frame.size.width-2*leftEdgeInsets-9*spacing)/10;
-                CGFloat btnHeight = btnWidth+3;
                 CGFloat tmpY = 10;
+                CGFloat btnHeight = (containerView.frame.size.height-10-8-3*5)/4;
                 for (NSInteger i=0; i<10 && i<keyArr.count; i++) {
                     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(leftEdgeInsets+i*(btnWidth+spacing), tmpY, btnWidth, btnHeight)];
                     btn.tag = 2000+i;
@@ -140,8 +140,8 @@
                 CGFloat leftEdgeInsets = 12;
                 CGFloat spacing = 5;
                 CGFloat btnWidth = (containerView.frame.size.width-2*leftEdgeInsets-9*spacing)/10;
-                CGFloat btnHeight = btnWidth+3;
                 CGFloat tmpY = 10;
+                CGFloat btnHeight = (containerView.frame.size.height-10-8-3*5)/4;
                 for (NSInteger i=0; i<10 && i<keyArr.count; i++) {
                     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(leftEdgeInsets+i*(btnWidth+spacing), tmpY, btnWidth, btnHeight)];
                     btn.tag = 1000+i;
